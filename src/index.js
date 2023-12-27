@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//theme
+import { baselightTheme } from './theme/DefaultColors';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+//store
+import { store } from './redux-toolkit/store';
+import { Provider } from 'react-redux';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={baselightTheme}>
+      <CssBaseline/>
+      <Provider
+        store={store}
+      >
+        <App />
+      </Provider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
