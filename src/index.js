@@ -1,25 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import ProductList from './Products/ProductList';
 import reportWebVitals from './reportWebVitals';
-//theme
 import { baselightTheme } from './theme/DefaultColors';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-//store
-import { store } from './redux-toolkit/store';
 import { Provider } from 'react-redux';
+import { store } from './redux-cart/Stores';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={baselightTheme}>
-      <CssBaseline/>
+      <CssBaseline />
       <Provider
         store={store}
       >
-        <App />
+        <ProductList />
       </Provider>
     </ThemeProvider>
   </React.StrictMode>

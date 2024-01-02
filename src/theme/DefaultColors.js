@@ -6,13 +6,13 @@ const baselightTheme = createTheme({
     direction: 'ltr',
     palette: {
         primary: {
-            main: '#2979ff',
+            main: '#263238',
             light: '#5393ff',
             dark: '#357a38',
             contrastText: "#fff" //button text white instead of black
         },
         secondary: {
-            main: '#357a38',
+            main: '#263238',
             light: '#f0f2f9',
             dark: '#23afdb',
         },
@@ -29,7 +29,7 @@ const baselightTheme = createTheme({
             contrastText: '#ffffff',
         },
         error: {
-            main: '#FA896B',
+            main: '#FF0000',
             light: '#FDEDE8',
             dark: '#f3704d',
             contrastText: '#ffffff',
@@ -55,8 +55,8 @@ const baselightTheme = createTheme({
 
         },
         text: {
-            primary: '#2A3547',
-            secondary: '#5A6A85',
+            primary: '#000000',
+            secondary: '#000000',
         },
         action: {
             disabledBackground: 'rgba(73,82,88,0.12)',
